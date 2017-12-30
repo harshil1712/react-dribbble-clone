@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar,Nav,NavItem, Button, NavDropdown, MenuItem, Image, Glyphicon, Well,Form, FormControl,FormGroup,InputGroup, DropdownButton} from 'react-bootstrap';
+import {Navbar,Nav,NavItem, Button, NavDropdown, MenuItem, Image, Glyphicon, Well,Form, FormControl,FormGroup,InputGroup, DropdownButton, Grid, Col,Row} from 'react-bootstrap';
 import logo from '../Assests/logo1.png';
 import Designer from './designerdata';
 
@@ -53,22 +53,24 @@ const WellInstance = ()=>(
 );
 const Wrapper = () => (
   <div className='container-fluid'>
-    <div>
-      <span>
-        <DropdownButton title='Designers' id="dropdown-no-caret">
-          <MenuItem eventKey="1">Designers &amp; Team</MenuItem>
-          <MenuItem eventKey="2">Design Team</MenuItem>
-        </DropdownButton>
-      </span>
-      <span pullright='true'>
-        <span>Sort:</span>&nbsp;
-        <span>Trending</span>&nbsp;
-        <span>•</span>&nbsp;
-        <span>Followers</span>
-      </span>
-        <hr />
+    <Grid bsClass='container-fluid'>
+      <Row>
+        <Col md={6}>
+          <DropdownButton title='Designers' id="dropdown-no-caret">
+            <MenuItem eventKey="1">Designers &amp; Team</MenuItem>
+            <MenuItem eventKey="2">Design Team</MenuItem>
+          </DropdownButton>
+        </Col>
+        <Col md={6} className='text-right'>
+          <span>Sort:</span>&nbsp;
+          <span>Trending</span>&nbsp;
+          <span>•</span>&nbsp;
+          <span>Followers</span>
+        </Col>
+      </Row>
+    </Grid>
+    <hr />
     </div>
-  </div>
 )
 const ResultWrapper = () =>(
   <div className='container-fluid spacing'>

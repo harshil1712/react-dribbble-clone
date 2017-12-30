@@ -4,6 +4,28 @@ import Slider from 'react-slick';
 
 const imgUrl = 'https://5a422991e1542700129be910.mockapi.io/imagecard/users/1/images';
 
+function SampleNextArrow(props) {
+    const {className, style, onClick} = props
+    return (
+      <div
+        className={className}
+        style={{...style, display: 'block', background: '#2b2b2b96'}}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const {className, style, onClick} = props
+    return (
+      <div
+        className={className}
+        style={{...style, display: 'block', background: '#2b2b2b96'}}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
 class Work extends Component{
     constructor(){
         super();
@@ -30,7 +52,9 @@ class Work extends Component{
         var settings = {
             dots: false,
             speed: 500,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />
           };
 
         return(

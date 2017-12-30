@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Grid,Col,Row, Image,Glyphicon,Button} from 'react-bootstrap';
 import Work from './imagedata';
 
-const userUrl = 'https://5a422991e1542700129be910.mockapi.io/imagecard/users?p=1&l=10';
+const userUrl = 'https://5a422991e1542700129be910.mockapi.io/imagecard/users?p=1&l=5';
 
 
 class Designer extends Component{
