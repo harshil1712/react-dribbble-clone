@@ -131,6 +131,7 @@ ul{
   height: 170px;
   top:45%;
   width: 30px;
+  z-index: 500;
 }
 .slick-next:before, .slick-prev:before{
   line-height: 9;
