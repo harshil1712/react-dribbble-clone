@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Thumbnail,Grid,Row,Col} from 'react-bootstrap';
+import {Thumbnail} from 'react-bootstrap';
 import Slider from 'react-slick';
 
 const imgUrl = 'https://5a422991e1542700129be910.mockapi.io/imagecard/users/';
@@ -62,11 +62,7 @@ class Work extends Component{
         return(
             <div>
             <Slider {...settings} style={{background:'transparent'}}>
-                    {/* <Grid>
-                        <Row> */}
-                            {images}
-                        {/* </Row> */}
-                    {/* </Grid> */}
+                {images}
             </Slider>
             </div>
         )
