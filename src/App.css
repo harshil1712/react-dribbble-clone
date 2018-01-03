@@ -140,3 +140,20 @@ ul{
 .container-fluid hr{
   padding: 5px;
 }
+.modal-dialog{
+  width: 920px;
+  border-radius: 6px;
+}
+.modal-content{
+  background: #f4f4f4;
+  padding: 20px;
+}
+.modal-backdrop.in{
+  opacity: .8;
+}
+.modal-body .container{
+  width: auto;
+}
+.img-logo{
+  height: 48px;
+}
