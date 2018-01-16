@@ -41,7 +41,7 @@ class Work extends Component{
         .then(d=>d.json())
         .then(d=>{
             this.setState({images:d});
-            console.log(this.state.images);
+            // console.log(this.state.images);
         })
     }
 
@@ -51,6 +51,7 @@ class Work extends Component{
 
     open= ()=> {
         this.setState({ showModal: true });
+        console.log(this.state.images[0]);
     }
     
 
@@ -60,6 +61,10 @@ class Work extends Component{
                 <Thumbnail src={item.imageUrl} key={i} onClick={this.open} />
             </div>
         ));
+        // const modal = this.state.images.map((item,i)=>(
+        //     <ModalComponent close={this.close} showModal={this.state.showModal} key={i} src={this.props.image} name={item.name} /> 
+            // console.log(item.name) 
+        // ));
         var settings = {
             dots: false,
             speed: 500,
