@@ -32,7 +32,8 @@ class Work extends Component{
         super(props);
         this.state={
             images:[],
-            showModal:false
+            showModal:false,
+            imageData:{}
         }
     }
 
@@ -51,14 +52,23 @@ class Work extends Component{
 
     open= ()=> {
         this.setState({ showModal: true });
-        console.log(this.state.images[0]);
+        // this.setState({imageData:item})
+        // console.log(e);
     }
-    
+
+    // imgData =(item) =>{
+    //     console.log(item);
+    // }
+
+    // clickFunc(item) {
+    //     open;
+    //     imgData(item);
+    // }
 
     render(){
         const images = this.state.images.map((item,i)=>(
             <div key={i}>
-                <Thumbnail src={item.imageUrl} key={i} onClick={this.open} />
+                <Thumbnail src={item.imageUrl} key={i} onClick={()=>{this.setState({showModal:true});this.setState({imageData:item})}} />
             </div>
         ));
         // const modal = this.state.images.map((item,i)=>(
@@ -80,7 +90,7 @@ class Work extends Component{
                 <Slider {...settings} style={{background:'transparent'}}>
                     {images}
                 </Slider>
-                <ModalComponent close={this.close} showModal={this.state.showModal} />
+                <ModalComponent close={this.close} showModal={this.state.showModal} data={this.state.imageData} desgImg={this.props.image} desgName={this.props.name} />
             </div>
         )
     }
