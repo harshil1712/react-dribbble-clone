@@ -68,7 +68,7 @@ class Work extends Component{
     render(){
         const images = this.state.images.map((item,i)=>(
             <div key={i}>
-                <Thumbnail src={item.imageUrl} key={i} onClick={()=>{this.setState({showModal:true});this.setState({imageData:item})}} />
+                <Thumbnail src={item.imageUrl} key={i} onClick={()=>{this.setState({showModal:true});this.setState({imageData:item})}} className='design-img' />
             </div>
         ));
         // const modal = this.state.images.map((item,i)=>(

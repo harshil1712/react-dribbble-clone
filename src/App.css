@@ -117,11 +117,11 @@ hr{
 ul{
   list-style: none;
 }
-.thumbnail img{
+.design-img img{
   height: 150px;
   width: 200px;
 }
-.thumbnail{
+.design-img{
   width: 220px;
   padding: 8px;
   border-radius: 0;
@@ -159,4 +159,61 @@ ul{
 }
 .image-name{
   margin: 0;
+}
+.modal-img{
+  border: none;
+  height: 340px;
+  width: 440px;
+  padding: 20px;
+}
+.marginTop{
+  margin-top: 20px;
+}
+.modal-img img{
+  width: 400px;
+  height: 300px;
+}
+.stats{
+  color: #999;
+}
+.stats li{
+  padding: 10px 5px 10px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.modal .glyphicon{
+  font-size: 18px;
+  vertical-align: middle;
+}
+.color{
+  width: 25px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+  cursor: pointer;
+}
+#ff755c{
+  background: #ff755c;
+}
+#fc6363{
+  background: #fc6363;
+}
+#fe7e59{
+  background: #fe7e59;
+}
+#fda346{
+  background: #fda346;
+}
+.color:hover{
+  transform: scale(1.5);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.color:first-of-type{
+  margin-left: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.color:last-of-type{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
