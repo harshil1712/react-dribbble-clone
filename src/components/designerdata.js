@@ -59,7 +59,7 @@ class Designer extends Component{
                         </div>
                     </Col>
                     <Col md={8}>
-                        <Work id={item.id} />
+                        <Work id={item.id} image={item.imageUrl} name={item.name} />
                     </Col>
                 </Row>
             </Grid>
